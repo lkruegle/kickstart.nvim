@@ -1,3 +1,7 @@
+# Lukas' Chalmers config
+
+My config for my time in the Chalmers MPALG program
+
 # kickstart.nvim
 
 ## Introduction
