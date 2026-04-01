@@ -8,6 +8,9 @@ vim.pack.add({
 
   -- Install Telescope
   'https://github.com/nvim-telescope/telescope.nvim',
+
+  -- Extra pickers
+  'https://github.com/srackham/digraph-picker.nvim'
 })
 
 --  `:help telescope.setup()`
@@ -57,3 +60,17 @@ end, { desc = '[S]earch [/] in Open Files' })
 vim.keymap.set('n', '<leader>sn', function()
   builtin.find_files { cwd = vim.fn.stdpath 'config' }
 end, { desc = '[S]earch [N]eovim files' })
+
+
+-- DIGRAPHS
+local digraph_picker = require('digraph-picker')
+digraph_picker.setup({
+  digraphs = {
+    { digraph = 'vd', symbol = '⊢', name='v-dash/turnstile' }
+  }
+})
+
+vim.keymap.set( { 'i', 'n' }, '<C-k><C-k>', digraph_picker.insert_digraph,
+  { noremap = true, silent = true, desc = "Digraph picker" }
+)
+

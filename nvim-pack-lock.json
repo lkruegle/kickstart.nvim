@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "digraph-picker.nvim": {
+      "rev": "f3ae739335c279093f8325a5b410021dc8bcde7c",
+      "src": "https://github.com/srackham/digraph-picker.nvim"
+    },
     "everforest": {
       "rev": "b03a03148c8b34c24c96960b93da9c8883d11f54",
       "src": "https://github.com/sainnhe/everforest"
