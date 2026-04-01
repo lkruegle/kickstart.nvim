@@ -9,7 +9,7 @@ o.undofile = true
 o.ignorecase = true
 o.smartcase = true
 o.signcolumn = 'yes'
-o.showmode = false
+o.showmode = true
 -- Enable mouse mode, can be useful for resizing splits for example!
 o.mouse = 'a'
 -- Enable break indent
