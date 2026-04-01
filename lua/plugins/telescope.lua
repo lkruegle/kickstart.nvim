@@ -66,7 +66,8 @@ end, { desc = '[S]earch [N]eovim files' })
 local digraph_picker = require('digraph-picker')
 digraph_picker.setup({
   digraphs = {
-    { digraph = 'vd', symbol = '⊢', name='v-dash/turnstile' }
+    { digraph = 'vd', symbol = '⊢', name='v-dash/turnstile' },
+    { digraph = 'nt', symbol = 'ℕ', name='natural numbers' }
   }
 })
 
