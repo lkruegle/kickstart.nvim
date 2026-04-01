@@ -18,7 +18,7 @@ require('gitsigns').setup({
     end
 
     -- Navigation
-    map('n', ']c', function()
+    map('n', '<leader>gj', function()
       if vim.wo.diff then
         vim.cmd.normal { ']c', bang = true }
       else
@@ -26,7 +26,7 @@ require('gitsigns').setup({
       end
     end, { desc = 'Jump to next git [c]hange' })
 
-    map('n', '[c', function()
+    map('n', '<leader>gk', function()
       if vim.wo.diff then
         vim.cmd.normal { '[c', bang = true }
       else
@@ -36,15 +36,15 @@ require('gitsigns').setup({
 
     -- Actions
     -- normal mode
-    map('n', '<leader>hs', gitsigns.stage_hunk, { desc = 'git [s]tage hunk' })
-    map('n', '<leader>hr', gitsigns.reset_hunk, { desc = 'git [r]eset hunk' })
-    map('n', '<leader>hS', gitsigns.stage_buffer, { desc = 'git [S]tage buffer' })
-    map('n', '<leader>hu', gitsigns.stage_hunk, { desc = 'git [u]ndo stage hunk' })
-    map('n', '<leader>hR', gitsigns.reset_buffer, { desc = 'git [R]eset buffer' })
-    map('n', '<leader>hp', gitsigns.preview_hunk, { desc = 'git [p]review hunk' })
-    map('n', '<leader>hb', gitsigns.blame_line, { desc = 'git [b]lame line' })
-    map('n', '<leader>hd', gitsigns.diffthis, { desc = 'git [d]iff against index' })
-    map('n', '<leader>hD', function()
+    map('n', '<leader>gs', gitsigns.stage_hunk, { desc = 'git [s]tage hunk' })
+    map('n', '<leader>gr', gitsigns.reset_hunk, { desc = 'git [r]eset hunk' })
+    map('n', '<leader>gS', gitsigns.stage_buffer, { desc = 'git [S]tage buffer' })
+    map('n', '<leader>gu', gitsigns.stage_hunk, { desc = 'git [u]ndo stage hunk' })
+    map('n', '<leader>gR', gitsigns.reset_buffer, { desc = 'git [R]eset buffer' })
+    map('n', '<leader>gp', gitsigns.preview_hunk, { desc = 'git [p]review hunk' })
+    map('n', '<leader>gb', gitsigns.blame_line, { desc = 'git [b]lame line' })
+    map('n', '<leader>gd', gitsigns.diffthis, { desc = 'git [d]iff against index' })
+    map('n', '<leader>gD', function()
       gitsigns.diffthis '@'
     end, { desc = 'git [D]iff against last commit' })
     -- Toggles
