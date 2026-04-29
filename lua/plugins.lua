@@ -3,7 +3,7 @@ require('plugins/treesitter')
 require('plugins/toggleterm')
 require('plugins/which-key')
 require('plugins/telescope')
-require('plugins/lsp')
+require('lsp')
 require('plugins/gitsigns')
 
 

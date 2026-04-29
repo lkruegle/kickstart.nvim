@@ -37,8 +37,8 @@ o.scrolloff = 10
 o.confirm = true
 
 -- TODO: Do I want this
-vim.cmd 'syntax enable'
-vim.cmd 'filetype plugin indent on'
+vim.cmd('syntax enable')
+vim.cmd('filetype plugin indent on')
 
 -- Sync clipboard between OS and Neovim.
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
